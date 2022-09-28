@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Desafio Formulário</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <form action="" method="post">
+                <h1>Prova de Conhecimentos Gerais</h1>
+                <p>Responda todas as questões, utilize rascunhos em papel para realizar os cáculos. Os rascunhos serão
+                    recolhidos pela professora após a quarentena.</p>
+                <br>
+                <BR>
+                <fieldset>
+                    <legend>Informações do Aluno</legend>
+                    <div class="inputbox">
+                        <input id="nome" name="nome" placeholder="Digite seu Nome" type="text" required>
+                    </div>
+                    <br>
+                    <div class="inputbox">
+                        <input id="grupo" name="grupo" placeholder="Nr° De Pessoas no Grupo" type="number" required>
+                    </div>
+                    <br>
+                    <div class="inputbox">
+                        <input id="email" name="email" placeholder="Digite seu e-mail" type=" email" required>
+                    </div>
+                    <br>
+                    <div class="inputbox">
+                        <label>Data de Nascimento</label><br>
+                        <input id="data" name="data" type="date" required>
+                    </div>
+                    <br>
+                    <div class="inputbox">
+                        <label>Digite uma senha para acessar os dados da pesquisa posteriormente:</label><br>
+                        <input id="senha" name="senha" placeholder="Digite sua senha" type="password" required>
+                    </div>
+
+                </fieldset><br>
+
+                <fieldset>
+                    <legend>Matematíca</legend>
+                    <div class="inputbox">
+                        <label> 3 + 3 = </label>
+                        <input id="soma" name="soma" type="text" required>
+                    </div>
+                    <br>
+                    <div class="inputbox">
+                        <label>10 / 3 = </label>
+                        <input id="divisao" name="divisao" type="text" required>
+                    </div>
+                    <br>
+                    <div class="inputbox">
+                        <label> 5 * 2 = </label>
+                        <input id="multip" name="multip" type="text" required>
+                    </div>
+
+                </fieldset><br>
+
+                <fieldset>
+                    <legend>Quanto a utilização</legend>
+                    <div class="imagem">
+                        <img src="imagem.jpg">
+                    </div>
+                    <br>
+                    <div class="input-radio">
+                        <label>Na frase: "Eu sou bonito" o sujeito é: </label><br>
+                        <input id="brad" name="sujeito" type="radio" required>
+                        <label for="brad">Brad Pitt</label><br>
+                        <input id="joao" name="sujeito" type="radio" required>
+                        <label for="joao">João da padaria</label><br>
+                        <input id=" voce" name="sujeito" type="radio" required>
+                        <label for="brad">Você Mesmo</label><br>
+                        <input id="pais" name="sujeito" type="radio" required>
+                        <label for="pais">Meus Pais</label><br>
+                        <input id="eu" name="sujeito" type="radio" required>
+                        <label for="eu">Eu</label>
+                    </div><br>
+                    <div class="input-check">
+                        <label>Complete a frase: "Filho de peixe, Peixinho ___"</label>
+                        <br>
+                        <input id="é" name="é" type="checkbox">
+                        <label for="é">é</label>
+                        <br>
+                        <input id="tem" name="tem" type="checkbox">
+                        <label for="tem">tem</label>
+                        <br>
+                        <input id="verde" name="verde" type="checkbox">
+                        <label for="verde">verde</label>
+                        <br>
+                        <input id="bonito" name="bonito" type="checkbox">
+                        <label for="bonito">bonito</label>
+                        <br>
+                        <input id="maria" name="maria" type="checkbox">
+                        <label for="maria">maria</label>
+                    </div>
+                </fieldset><br>
+
+                <fieldset>
+                    <legend>Dê uma nota para sua professora:</legend>
+                    <div class="slidercontainer">
+                        <label>Sua professora explica bem a matéria?</label>
+                        <br>
+                        <input type="range" min="1" max="100" value="50" class="slider" id="slider" required>
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Opiniões</legend>
+                    <div class="coments">
+                        <label>Digite sua Opinião sobre a diciplina:</label>
+                        <br>
+                        <textarea name="opiniao" id="opiniao" rows="6" style="width: 26em"></textarea>
+                    </div>
+                </fieldset>
+                <br>
+                <br>
+                <div class="button">
+                    <button type="submit" id="submit">Gravar Respostas</button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
